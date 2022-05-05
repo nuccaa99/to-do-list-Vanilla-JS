@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="style.css">
+    
+    </head>
+    <body>
+    <div class="container">
+        <div class="title">
+            <h1>To-Do List</h1>
+        </div>
+        <div class="addTask">
+            <input type="textarea" id="input-task">
+            <button class="mainButton" id="add-task-button">ADD TASK</button>
+        </div>
+        <div id="listdiv">
+          <nav id="navbar" class="listname">
+            <input type="textarea" id="list-title" class = "list-title" placeholder="ENTER LIST TITLE...">
+          </nav>
+            <ul id="task-list"></ul>
+         </div>
+    <button class="mainButton" id="clear-btn" onclick = clearAll()>CLEAR ALL</button>
+      </div>
+    <script src="app.js"></script>
+    </body>
+    
+    
+</html>

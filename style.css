@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+:root {
+    --backgroundColor: #D3D57C;
+    --purp: #542E71;
+    --lightPurp: #874cb2;
+    --lightcream: #FFFCD1;
+    --red: #9d0505;
+    --lightred: #db5353;
+}
+
+
+body {
+    font-family: 'Inconsolata', monospace;
+    background-color: var(--backgroundColor);
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#task-list {
+    list-style: none;
+
+}
+
+.delete-btn {
+    border-radius: 50px;
+    border: none;
+    background-color: var(--red);
+    color: var(--backgroundColor);
+    width: 30px;
+    height: 20px; 
+
+  
+}
+
+.delete-btn:hover {
+ cursor:pointer;
+}
+
+
+h1 {
+    color:var(--purp);
+  margin-bottom: 50px;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2),
+    0px -5px 35px rgba(255,255,255,0.3);
+
+}
+
+#input-task {
+    outline: none;
+    border-width: 0 0 2px;
+    border-color: var(--purp);
+    width: 380px;
+    background-color: var(--backgroundColor);
+    color: var(--purp);
+    font-size: 1.1em;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+}
+
+.mainButton {
+    border: none;
+    border-radius: 2px;
+    background-color: var(--purp);
+    color: var(--backgroundColor);
+    height: 30px;
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+  cursor: pointer;
+
+}
+#add-task-button:hover {
+    color: var(--lightcream);
+    background-color: var(--lightPurp);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+#clear-btn {
+  background-color: var(--red);
+  color: var(--backgroundColor);
+  margin-top: 50px;
+}
+
+#clear-btn:hover {
+    color: var(--lightcream);
+    background-color: var(--lightred);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+ li{
+    display: grid;
+    grid-template-columns: 25px 350px 50px;
+    color: var(--purp);
+    font-weight: bold;
+    margin-top: 10px;
+
+ }
+
+input[type=checkbox]:checked + .task {
+    text-decoration: line-through;
+}
+  
+
+.list {
+  background-color: var(--lightcream);
+  margin-top:15px;
+  border-radius:2px;
+}
+
+.navbar {
+  background-color: var(--purp);
+  height: 30px;
+  border-radius:2px;
+}
+
+.list-title {
+  display: none;
+}
+
+#list-title {
+    outline: none;
+    border:none;
+    width: 380px;
+    background-color: var(--purp);
+    color: var(--backgroundColor);
+    font-family: 'Inconsolata', monospace;
+    font-size:1.05em;
+    font-weight: 600;
+    line-height:25px;
+    margin-left:15px;
+ 
+}
+
+::placeholder {
+  color: var(--backgroundColor);
+  opacity: 70%;
+}
